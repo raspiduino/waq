@@ -22,23 +22,24 @@ and the download link is <a href="https://mega.nz/#F!kJI3HIAS!CQAUKgp6thSAA_A2Gb
 - <a href="https://drive.google.com/file/d/1XmCJDlcITesHN5oW01ySUU1eyLF_fUE-/view?usp=sharing">7z compressed version</a> (Size: 4.2GB)
 
 ## How to use
-Step 1: Install QEMU
-<br>    Goto <a href="https:\\qemu.org">qemu.org</a> and install QEMU if you haven't installed it yet.
-<br>    On Linux just run ```sudo apt install qemu-system-aarch64```
+Step 1: Install QEMU: Goto <a href="https:\\qemu.org">qemu.org</a> and install QEMU if you haven't installed it yet. On Linux just run ```sudo apt install qemu-system-aarch64```
         
 Step 2: Clone the repo
-<br>    ```bash
-        git clone https://github.com/raspiduino/waq/
-        cd waq
-        ```
+```bash
+   git clone https://github.com/raspiduino/waq/
+   cd waq
+```
 
-Step 3: (Optional) Install Virtio driver
-<br>    Download the driver iso <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">here</a> and put it to the vm directory.
-<br>    <b>IMPORTANT:</b> If you don't want to install Virtio driver or you finished install it, you can delete it (if you have downloaded it) and comment out the 2 last line in the script. For Linux/MacOS script, just remove ```-device usb-storage,drive=drivercdrom -drive file="virtio-win-0.1.185.iso",media=cdrom,if=none,id=drivercdrom``` from arm.sh
+Step 3: (Optional) Install Virtio driver: Download the driver iso <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">here</a> and put it to the vm directory.
+<br><b>IMPORTANT:</b> If you don't want to install Virtio driver or you finished install it, you can delete it (if you have downloaded it) and comment out the 2 last line in the script. For Linux/MacOS script, just remove ```-device usb-storage,drive=drivercdrom -drive file="virtio-win-0.1.185.iso",media=cdrom,if=none,id=drivercdrom``` from arm.sh
 
 Step 4: Start the script
-<br>    Just like normal script, ```./arm.sh``` for Linux/MacOS and ```arm.sh``` for Windows
+<br>Just like normal script, ```./arm.sh``` for Linux/MacOS and ```arm.sh``` for Windows
 
-<br>Notes:
+## Notes:
 - The emulator may be so lag when you boot it. After a while when the desktop loaded, you can use it normally.
 - This image file can be used to flash the real rpi
+- You can use ```--enable-kvm``` when you are on a real ARM cpu with <i>virtualization</i>.
+
+## Todo
+- Add saved state image so you can just restore it.
