@@ -60,7 +60,7 @@ Step 4: Start the script
 <br>Just like normal script, ```./arm.sh``` for Linux/MacOS and ```arm.sh``` for Windows
 
 ## On boot
-When it boot to EFI shell, enter ```exit```. Then it will come to a list of options, select 'Boot Manager', then select 'UEFI QEMU QEMU HARDDRIVE ...4.1'. If this does not work and you return to that menu, please try another boot device in that list. That should work.
+When it boot to EFI shell, enter ```exit```. Then it will come to a list of options, select 'Boot Manager', then select 'UEFI QEMU QEMU HARDDRIVE ...3' or 'UEFI QEMU QEMU HARDDRIVE ...4.1'. If this does not work and you return to that menu, please try another boot device in that list. That should work.
 
 ## Notes:
 - The emulator may be so lag when you boot it. After a while when the desktop loaded, you can use it normally.
