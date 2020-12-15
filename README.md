@@ -24,10 +24,33 @@ and the download link is <a href="https://mega.nz/#F!kJI3HIAS!CQAUKgp6thSAA_A2Gb
 ## How to use
 Step 1: Install QEMU: Goto <a href="https:\\qemu.org">qemu.org</a> and install QEMU if you haven't installed it yet. On Linux just run ```sudo apt install qemu-system-aarch64```
         
-Step 2: Clone the repo
+Step 2: Download the script: Goto <a href="https://github.com/raspiduino/waq/releases">Release</a> and download it. Or you can copy the script here:
+- For Windows:
+```bat
+@echo off
+title WOA
+qemu-system-aarch64.exe ^
+-name "Windows 10 on ARM64" ^
+-M virt ^
+-cpu cortex-a72 ^
+-smp 3 ^
+--accel tcg,thread=multi ^
+-m 2048 ^
+-pflash QEMU_EFI.img ^
+-pflash QEMU_VARS.img ^
+-device VGA ^
+-device nec-usb-xhci ^
+-device usb-kbd ^
+-device usb-mouse ^
+-device usb-storage,drive=boot ^
+-drive if=none,id=boot,file="woa_17134.img" ^
+-device usb-storage,drive=drivercdrom ^
+-drive file="virtio-win-0.1.185.iso",media=cdrom,if=none,id=drivercdrom
+```
+- For Linux/MacOS:
 ```bash
-   git clone https://github.com/raspiduino/waq/
-   cd waq
+#/bin/bash
+qemu-system-aarch64 -name "Windows 10 on ARM64" -M virt -cpu cortex-a72 -smp 3 --accel tcg,thread=multi -m 2048 -pflash QEMU_EFI.img -pflash QEMU_VARS.img -device VGA -device nec-usb-xhci -device usb-kbd -device usb-mouse -device usb-storage,drive=boot -drive if=none,id=boot,file="woa_17134.img" -device usb-storage,drive=drivercdrom -drive file="virtio-win-0.1.185.iso",media=cdrom,if=none,id=drivercdrom
 ```
 
 Step 3: (Optional) Install Virtio driver: Download the driver iso <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">here</a> and put it to the vm directory.
