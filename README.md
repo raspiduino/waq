@@ -59,7 +59,7 @@ Step 3: (Optional) Install Virtio driver: Download the driver iso <a href="https
 Step 4: Start the script
 <br>Just like normal script, ```./arm.sh``` for Linux/MacOS and ```arm.sh``` for Windows
 
-## In boot
+## On boot
 When it boot to EFI shell, enter ```exit```. Then it will come to a list of options, select 'Boot Manager', then select 'UEFI QEMU QEMU HARDDRIVE ...4.1'. If this does not work and you return to that menu, please try another boot device in that list. That should work.
 
 ## Notes:
