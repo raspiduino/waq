@@ -21,6 +21,8 @@ and the download link is <a href="https://mega.nz/#F!kJI3HIAS!CQAUKgp6thSAA_A2Gb
 - <a href="https://drive.google.com/file/d/1AkEPWPXm_N3jzcDk58p2uJbi7HENA2sq/view?usp=sharing">FreeArc compressed version</a>. You must use FreeArc to extract it. (Size: 4.0 GB)
 - <a href="https://drive.google.com/file/d/1XmCJDlcITesHN5oW01ySUU1eyLF_fUE-/view?usp=sharing">7z compressed version</a> (Size: 4.2GB)
 
+If there is a password prompt, type in `win10arm64`
+
 ## How to use
 Step 1: Install QEMU: Goto <a href="https:\\qemu.org">qemu.org</a> and install QEMU if you haven't installed it yet. On Linux just run ```sudo apt install qemu-system-aarch64```
         
