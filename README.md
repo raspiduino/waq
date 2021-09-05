@@ -8,7 +8,7 @@ a real ARM cpu, the only way is running it inside QEMU.
 and this takes <b>really long time</b> to install on QEMU (about 3 -> 4 days on my machine with <i>Pentium Dualcore T4300</i>). Another way
 is to apply the install.wim to a vhd file and put it to QEMU, but this might not work due to missing EFI loader (I have tried this too).
 
-<br>So in this gist I will give you my modified version of preinstalled img file originally from <a href="https://discourse.pi64.win/t/how-to-installing-windows-10-arm64-17134-on-your-raspberry-pi-3-and-4/488/4">this post</a>
+<br>So in this repo I will give you my modified version of preinstalled img file originally from <a href="https://discourse.pi64.win/t/how-to-installing-windows-10-arm64-17134-on-your-raspberry-pi-3-and-4/488/4">this post</a>
 and the download link is <a href="https://mega.nz/#F!kJI3HIAS!CQAUKgp6thSAA_A2GbgdjA">here</a>.
 
 ## What have been modified?
@@ -67,7 +67,7 @@ When it boot to EFI shell, enter ```exit```. Then it will come to a list of opti
 ## Notes:
 - The emulator may be so lag when you boot it. After a while when the desktop loaded, you can use it normally.
 - This image file can be used to flash the real rpi
-- You can use ```--enable-kvm``` when you are on a real ARM cpu with <i>virtualization</i>.
+- You can use ```--enable-kvm``` when you are on a real ARM cpu with <i>virtualization</i>. I'm about to run this on my phone [here](https://github.com/raspiduino/sm-a600g-kvm)
 
 ## Todo
 - Add saved state image so you can just restore it.
