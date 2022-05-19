@@ -1,8 +1,10 @@
 # WAQ - Windows 10 for ARM on QEMU
 
+## Quick note
+It has been a long time since the last time I touched this Readme file. Now's 2022 already and you can build yourself a newer EDKII image instead of using this (if you have problem with using this). And also, if you really want a usable Windows on ARM (not too slow), get a Raspberry Pi and install directly on it (check out WoA project) or run on KVM on it.
+
 ## Why do this?
-Microsoft has released Windows 10 for ARM64 for several years. This sound interesting and you want to try this right? But if you don't have
-a real ARM cpu, the only way is running it inside QEMU.
+To run Windows on ARM on an emulator without finding a real hardware :)
 
 <br> There are some pages show how to do this on the Internet. But the problem is, you will have to download the iso and install yourself
 and this takes <b>really long time</b> to install on QEMU (about 3 -> 4 days on my machine with <i>Pentium Dualcore T4300</i>). Another way
