@@ -1,5 +1,8 @@
 # WAQ - Windows 10 for ARM on QEMU
 
+## Update
+For anyone who wants newer Windows version, please refer to [this](https://gist.github.com/Vogtinator/293c4f90c5e92838f7e72610725905fd) tutorial by [Vogtinator](https://gist.github.com/Vogtinator)
+
 ## Quick note
 It has been a long time since the last time I touched this Readme file. Now's 2022 already and you can build yourself a newer EDKII image instead of using this (if you have problem with using this). And also, if you really want a usable Windows on ARM (not too slow), get a Raspberry Pi and install directly on it (check out WoA project) or run on KVM on it.
 
